@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    padding: 20px;
+    margin: 20px;
+    font-size: xx-large;
+}
+#counter{
+    text-align: center;
+    margin-top: 10rem;
+}
+.decrease{
+    height: 3rem;
+    width: 5rem;
+    font-size: medium;
+    margin-left: 40rem;
+    background: #a60707;
+    color: wheat;
+}
+.increase{
+    height: 3rem;
+    width: 5rem;
+    font-size: medium;
+    text-align: center;
+    background:#027d09;
+    color: white;
+}
