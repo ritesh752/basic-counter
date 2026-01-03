@@ -1,31 +1,67 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    padding: 20px;
-    margin: 20px;
-    font-size: xx-large;
+
+body {
+  padding: 20px;
+  margin: 0px;
+  min-height: 100vh;
+  font-size: xx-large;
+  background: linear-gradient(#ee8318, #ffffff, #138808);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-#counter{
-    text-align: center;
-    margin-top: 10rem;
+h1 {
+  text-align: center;
+  font-size: larger;
 }
-.decrease{
-    height: 3rem;
-    width: 5rem;
-    font-size: medium;
-    margin-left: 40rem;
-    background: #a60707;
-    color: wheat;
+
+#counter {
+  text-align: center;
+  margin-top: 5rem;
 }
-.increase{
-    height: 3rem;
-    width: 5rem;
-    font-size: medium;
-    text-align: center;
-    background:#027d09;
-    color: white;
-    margin-left: 40rem;
+
+.btns {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+button {
+  height: 3rem;
+  width: 8rem;
+  font-size: medium;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.decrease {
+  background: #a60707;
+  color: wheat;
+}
+
+.increase {
+  background: #027d09;
+  color: white;
+}
+
+/*  Mobile Responsive */
+@media (max-width: 600px) {
+  body {
+    font-size: large;
+  }
+  .btns {
+    gap: 10px;
+  }
+
+  button {
+    width: 6rem;
+    height: 2.8rem;
+  }
 }
